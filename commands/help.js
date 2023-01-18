@@ -39,9 +39,9 @@ module.exports = {
   Discord Music Bot Version: v${require("../package.json").version}
   [✨ Support Server](${
     client.botconfig.SupportServer
-  }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | [Dashboard](${
+  }) | [GitHub](https://github.com/rinxyzz) | [Dashboard](${
       client.botconfig.Website
-    }) | By [SudhanPlayz](https://github.com/SudhanPlayz)`);
+    }) | By [iMiku](https://rinzxx.ga/)`);
     if (!args[0]) message.channel.send(Embed);
     else {
       let cmd =
@@ -125,9 +125,9 @@ module.exports = {
   Discord Music Bot Version: v${require("../package.json").version}
   [✨ Support Server](${
     client.botconfig.SupportServer
-  }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | [Dashboard](${
+  }) | [GitHub](https://github.com/rinxyzz) | [Dashboard](${
         client.botconfig.Website
-      }) | By [SudhanPlayz](https://github.com/SudhanPlayz)`);
+      }) | By [iMiku](https://rinzxx.ga)`);
       if (!args) return interaction.send(Embed);
       else {
         let cmd =
