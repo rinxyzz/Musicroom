@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./assets/logo.gif" width="30px"> Discord Music Bot <img src="./assets/logo.gif" width="30px"></h1>
+<h1 align="center"><img src="./assets/logo.gif" width="30px"> Musicroom <img src="./assets/logo.gif" width="30px"></h1>
 
 ## 🚧 | Prerequisites
 
@@ -21,7 +21,7 @@
 
 Soon
 
-## 📝 | [Support Server](https://discord.gg/sbySMS7m3v)
+## 📝 | [Support Server](https://discord.gg/k9t8WjbFhw)
 
 If you have major coding issues with this bot, please join and ask for help.
 
@@ -31,15 +31,14 @@ Soon
 
 ## 🚀 | Deploy
 
-[![Deploy to heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SudhanPlayz/Discord-MusicBot/tree/v5)
-[![Open in Gitpod](https://camo.githubusercontent.com/76e60919474807718793857d8eb615e7a50b18b04050577e5a35c19421f260a3/68747470733a2f2f676974706f642e696f2f627574746f6e2f6f70656e2d696e2d676974706f642e737667)](https://gitpod.io/#https://github.com/SudhanPlayz/Discord-MusicBot/tree/v5)
+[![Deploy to heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rinxyzz/Musicroom/tree/v5)
 
 ## ✨ | Contributors
 
 Contributions are always welcomed :D Make sure to follow [Contributing.md](/CONTRIBUTING.md)
 
-<a href="https://github.com/SudhanPlayz/Discord-MusicBot/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=SudhanPlayz/Discord-MusicBot" />
+<a href="https://github.com/rinxyzz/Musicroom/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=rinxyzz/Musicroom" />
 </a>
 
 ## 🌟 | Made with
