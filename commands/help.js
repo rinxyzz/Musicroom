@@ -36,12 +36,12 @@ module.exports = {
         }help [Command] | Have a nice day!`
       ).setDescription(`${Commands.join("\n")}
   
-  Discord Music Bot Version: v${require("../package.json").version}
+  Musicroom Version: v${require("../package.json").version}
   [✨ Support Server](${
     client.botconfig.SupportServer
   }) | [GitHub](https://github.com/rinxyzz) | [Dashboard](${
       client.botconfig.Website
-    }) | By [iMiku](https://rinzxx.ga/)`);
+    }) | By [Rin4Ever](https://rin4ever.xyz/)`);
     if (!args[0]) message.channel.send(Embed);
     else {
       let cmd =
@@ -50,7 +50,7 @@ module.exports = {
       if (!cmd)
         return client.sendTime(
           message.channel,
-          `❌ | Unable to find that command.`
+          `<:sx_bg:1029983983494246421> | Unable to find that command.`
         );
 
       let embed = new MessageEmbed()
@@ -122,12 +122,12 @@ module.exports = {
           }help [Command] | Have a nice day!`
         ).setDescription(`${Commands.join("\n")}
   
-  Discord Music Bot Version: v${require("../package.json").version}
+  Musicroom Version: v${require("../package.json").version}
   [✨ Support Server](${
     client.botconfig.SupportServer
   }) | [GitHub](https://github.com/rinxyzz) | [Dashboard](${
         client.botconfig.Website
-      }) | By [iMiku](https://rinzxx.ga)`);
+      }) | By [Rin4Ever](https://rin4ever.xyz)`);
       if (!args) return interaction.send(Embed);
       else {
         let cmd =
@@ -138,7 +138,7 @@ module.exports = {
         if (!cmd)
           return client.sendTime(
             interaction,
-            `❌ | Unable to find that command.`
+            `<:sx_bg:1029983983494246421> | Unable to find that command.`
           );
 
         let embed = new MessageEmbed()
