@@ -1,5 +1,7 @@
 <h1 align="center"><img src="./assets/logo.gif" width="30px"> Musicroom <img src="./assets/logo.gif" width="30px"></h1>
 
+## Welcome To Music Room Source Code
+
 ## 🚧 | Prerequisites
 
 - [Node.js 16+](https://nodejs.org/en/download/)
@@ -16,10 +18,6 @@
 3. Reinvite the Bot with the right
    scopes. [Example Invite URL (Change CLIENT_ID)](https://discord.com/oauth2/authorize?client_id=CLIENT_ID&permissions=277083450689&scope=bot%20applications.commands)
 4. Run `npm run deploy` or `yarn deploy` to initialize the slash commands. _You can do this on your pc locally_
-
-## 📝 | Tutorial
-
-Soon
 
 ## 📝 | [Support Server](https://discord.gg/k9t8WjbFhw)
 
