@@ -60,37 +60,37 @@ const command = new SlashCommand()
 		let filtersEmbed = new MessageEmbed().setColor(client.config.embedColor);
 		
 		if (args == "nightcore") {
-			filtersEmbed.setDescription("✅ | Nightcore filter is now active!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Nightcore filter is now active!");
 			player.nightcore = true;
 		} else if (args == "bassboost") {
-			filtersEmbed.setDescription("✅ | BassBoost filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | BassBoost filter is now on!");
 			player.bassboost = true;
 		} else if (args == "vaporwave") {
-			filtersEmbed.setDescription("✅ | Vaporwave filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Vaporwave filter is now on!");
 			player.vaporwave = true;
 		} else if (args == "pop") {
-			filtersEmbed.setDescription("✅ | Pop filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Pop filter is now on!");
 			player.pop = true;
 		} else if (args == "soft") {
-			filtersEmbed.setDescription("✅ | Soft filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Soft filter is now on!");
 			player.soft = true;
 		} else if (args == "treblebass") {
-			filtersEmbed.setDescription("✅ | Treblebass filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Treblebass filter is now on!");
 			player.treblebass = true;
 		} else if (args == "eightD") {
-			filtersEmbed.setDescription("✅ | Eight Dimension filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Eight Dimension filter is now on!");
 			player.eightD = true;
 		} else if (args == "karaoke") {
-			filtersEmbed.setDescription("✅ | Karaoke filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Karaoke filter is now on!");
 			player.karaoke = true;
 		} else if (args == "vibrato") {
-			filtersEmbed.setDescription("✅ | Vibrato filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Vibrato filter is now on!");
 			player.vibrato = true;
 		} else if (args == "tremolo") {
-			filtersEmbed.setDescription("✅ | Tremolo filter is now on!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | Tremolo filter is now on!");
 			player.tremolo = true;
 		} else if (args == "off") {
-			filtersEmbed.setDescription("✅ | EQ has been cleared!");
+			filtersEmbed.setDescription("<:scheck_bg:1029984098065858570> | EQ has been cleared!");
 			player.reset();
 		} else {
 			filtersEmbed.setDescription("<:sx_bg:1029983983494246421> | Invalid filter!");

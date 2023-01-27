@@ -51,7 +51,7 @@ const command = new SlashCommand()
 			embeds: [
 				new MessageEmbed()
 					.setColor(client.config.embedColor)
-					.setDescription("✅ | **Skipped!**"),
+					.setDescription("<:scheck_bg:1029984098065858570> | **Skipped!**"),
 			],
 		});
 	});

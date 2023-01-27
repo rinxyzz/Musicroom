@@ -46,7 +46,7 @@ const command = new SlashCommand()
 		
 		let clearEmbed = new MessageEmbed()
 			.setColor(client.config.embedColor)
-			.setDescription(`✅ | **Cleared the queue!**`);
+			.setDescription(`<:scheck_bg:1029984098065858570> | **Cleared the queue!**`);
 		
 		return interaction.reply({ embeds: [clearEmbed] });
 	});
