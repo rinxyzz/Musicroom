@@ -93,7 +93,7 @@ const command = new SlashCommand()
 			filtersEmbed.setDescription("✅ | EQ has been cleared!");
 			player.reset();
 		} else {
-			filtersEmbed.setDescription("❌ | Invalid filter!");
+			filtersEmbed.setDescription("<:sx_bg:1029983983494246421> | Invalid filter!");
 		}
 		
 		return interaction.reply({ embeds: [filtersEmbed] });

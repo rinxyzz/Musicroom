@@ -18,7 +18,7 @@ const command = new SlashCommand()
 						let cmd = require(ContextCommandsDirectory + "/" + file);
 						if (!cmd.command || !cmd.run) {
 							return this.warn(
-								"❌ Unable to load Command: " +
+								"<:sx_bg:1029983983494246421> Unable to load Command: " +
 								file.split(".")[0] +
 								", File doesn't have either command/run",
 							);
@@ -37,7 +37,7 @@ const command = new SlashCommand()
 						
 						if (!cmd || !cmd.run) {
 							return client.warn(
-								"❌ Unable to load Command: " +
+								"<:sx_bg:1029983983494246421> Unable to load Command: " +
 								file.split(".")[0] +
 								", File doesn't have a valid command with run function",
 							);

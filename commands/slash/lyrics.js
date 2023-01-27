@@ -97,7 +97,7 @@ const command = new SlashCommand()
 				new MessageEmbed()
 					.setColor("RED")
 					.setDescription(
-						`❌ | No lyrics found for ${ search }!\nMake sure you typed in your search correctly.`,
+						`<:sx_bg:1029983983494246421> | No lyrics found for ${ search }!\nMake sure you typed in your search correctly.`,
 					),
 			],
 			components: [button],
@@ -108,7 +108,7 @@ const command = new SlashCommand()
 				new MessageEmbed()
 					.setColor("RED")
 					.setDescription(
-						`❌ | Unknown error has been detected, please check your console.`,
+						`<:sx_bg:1029983983494246421> | Unknown error has been detected, please check your console.`,
 					),
 			],
 		});

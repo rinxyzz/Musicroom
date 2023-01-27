@@ -52,7 +52,7 @@ const command = new SlashCommand()
 			if (!position || position < 0 || position > player.queue.size) {
 				let thing = new MessageEmbed()
 					.setColor(client.config.embedColor)
-					.setDescription("❌ | Invalid position!");
+					.setDescription("<:sx_bg:1029983983494246421> | Invalid position!");
 				return interaction.editReply({ embeds: [thing] });
 			}
 			

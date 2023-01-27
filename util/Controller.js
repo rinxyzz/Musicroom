@@ -12,7 +12,7 @@ module.exports = async (client, interaction) => {
 	if (!player) {
 		await interaction.reply({
 			embeds: [
-				client.Embed("❌ | **There is no player to control in this server.**"),
+				client.Embed("<:sx_bg:1029983983494246421> | **There is no player to control in this server.**"),
 			],
 		});
 		setTimeout(() => {
@@ -24,7 +24,7 @@ module.exports = async (client, interaction) => {
 		const joinEmbed = new MessageEmbed()
 			.setColor(client.config.embedColor)
 			.setDescription(
-				"❌ | **You must be in a voice channel to use this action!**",
+				"<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this action!**",
 			);
 		return interaction.reply({ embeds: [joinEmbed], ephemeral: true });
 	}
@@ -36,7 +36,7 @@ module.exports = async (client, interaction) => {
 		const sameEmbed = new MessageEmbed()
 			.setColor(client.config.embedColor)
 			.setDescription(
-				"❌ | **You must be in the same voice channel as me to use this action!**",
+				"<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this action!**",
 			);
 		return await interaction.reply({ embeds: [sameEmbed], ephemeral: true });
 	}
@@ -151,6 +151,6 @@ module.exports = async (client, interaction) => {
 
 	return interaction.reply({
 		ephemeral: true,
-		content: "❌ | **Unknown controller option**",
+		content: "<:sx_bg:1029983983494246421> | **Unknown controller option**",
 	});
 };

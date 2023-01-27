@@ -10,7 +10,7 @@ const command = new SlashCommand()
 			const joinEmbed = new MessageEmbed()
 				.setColor(client.config.embedColor)
 				.setDescription(
-					"❌ | **You must be in a voice channel to use this command.**",
+					"<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**",
 				);
 			return interaction.reply({ embeds: [joinEmbed], ephemeral: true });
 		}
