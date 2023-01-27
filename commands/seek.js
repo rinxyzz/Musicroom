@@ -22,12 +22,12 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -35,12 +35,12 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
       );
     if (!player.queue.current.isSeekable)
       return client.sendTime(
         message.channel,
-        "❌ | **I'm not able to seek this song!**"
+        "<:sx_bg:1029983983494246421> | **I'm not able to seek this song!**"
       );
     let SeekTo = client.ParseHumanTime(args.join(" "));
     if (!SeekTo)
@@ -72,14 +72,14 @@ module.exports = {
                     const member = guild.members.cache.get(interaction.member.user.id);
                     let player = await client.Manager.get(interaction.guild_id);
                     
-                    if (!member.voice.channel) return client.sendTime(interaction, "❌ | **You must be in a voice channel to use this command.**");
-                    if (guild.me.voice.channel && !guild.me.voice.channel.equals(member.voice.channel)) return client.sendTime(interaction, "❌ | **You must be in the same voice channel as me to use this command!**");
-                    if (!player) return client.sendTime(interaction, "❌ | **Nothing is playing right now...**");
-                    if (!player.queue.current.isSeekable) return client.sendTime(interaction, "❌ | **I'm not able to seek this song!**");
+                    if (!member.voice.channel) return client.sendTime(interaction, "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**");
+                    if (guild.me.voice.channel && !guild.me.voice.channel.equals(member.voice.channel)) return client.sendTime(interaction, "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**");
+                    if (!player) return client.sendTime(interaction, "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**");
+                    if (!player.queue.current.isSeekable) return client.sendTime(interaction, "<:sx_bg:1029983983494246421> | **I'm not able to seek this song!**");
                     let SeekTo = client.ParseHumanTime(interaction.data.options[0].value);
                     if (!SeekTo) return client.sendTime(interaction, `**Usage - **\`${GuildDB.prefix}seek <number s/m/h>\` \n**Example -** \`${GuildDB.prefix}seek 2m 10s\``);
                     player.seek(SeekTo * 1000);
-                    client.sendTime(interaction, "✅ | **Successfully moved the song to **", `\`${Seekto}\``);
+                    client.sendTime(interaction, "<:scheck_bg:1029984098065858570> | **Successfully moved the song to **", `\`${Seekto}\``);
                 },
             },
         ],

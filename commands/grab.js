@@ -22,17 +22,17 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!player.playing)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to play something!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to play something!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -40,7 +40,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
       );
     message.author
       .send(
@@ -80,10 +80,10 @@ module.exports = {
           )
       )
       .catch((e) => {
-        return message.channel.send("**❌ Your DMs are disabled**");
+        return message.channel.send("**<:sx_bg:1029983983494246421> Your DMs are disabled**");
       });
 
-    client.sendTime(message.channel, "✅ | **Check your DMs!**");
+    client.sendTime(message.channel, "<:scheck_bg:1029984098065858570> | **Check your DMs!**");
   },
   SlashCommand: {
     /**
@@ -101,17 +101,17 @@ module.exports = {
       if (!player)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
       if (!player.playing)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -119,7 +119,7 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          "❌ | **You must be in the same voice channel as me to use this command!**"
+          "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
         );
       try {
         let embed = new MessageEmbed()
@@ -154,10 +154,10 @@ module.exports = {
           );
         user.send(embed);
       } catch (e) {
-        return client.sendTime(interaction, "**❌ Your DMs are disabled**");
+        return client.sendTime(interaction, "**<:sx_bg:1029983983494246421> Your DMs are disabled**");
       }
 
-      client.sendTime(interaction, "✅ | **Check your DMs!**");
+      client.sendTime(interaction, "<:scheck_bg:1029984098065858570> | **Check your DMs!**");
     },
   },
 };

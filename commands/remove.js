@@ -24,12 +24,12 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -37,7 +37,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
       );
 
     if (!player.queue || !player.queue.length || player.queue.length === 0)
@@ -82,12 +82,12 @@ module.exports = {
       if (!player)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -95,11 +95,11 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          "❌ | **You must be in the same voice channel as me to use this command!**"
+          "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
         );
 
       if (!player.queue || !player.queue.length || player.queue.length === 0)
-        return client.sendTime("❌ | **Nothing is playing right now...**");
+        return client.sendTime("<:sx_bg:1029983983494246421> | **Nothing is playing right now...**");
       let rm = new MessageEmbed()
         .setDescription(
           `✅ | **Removed track** \`${Number(args[0])}\` from the queue!`

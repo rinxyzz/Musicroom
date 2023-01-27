@@ -21,12 +21,12 @@ module.exports = {
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel use this command**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel use this command**"
       );
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     await client.sendTime(message.channel, ":notes: | **Disconnected!**");
     await message.react("✅");
@@ -48,7 +48,7 @@ module.exports = {
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -56,14 +56,14 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          `❌ | **You must be in ${guild.me.voice.channel} to use this command.**`
+          `<:sx_bg:1029983983494246421> | **You must be in ${guild.me.voice.channel} to use this command.**`
         );
 
       let player = await client.Manager.get(interaction.guild_id);
       if (!player)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
       player.destroy();
       client.sendTime(interaction, ":notes: | **Disconnected!**");

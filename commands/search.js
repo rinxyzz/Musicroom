@@ -23,7 +23,7 @@ module.exports = {
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to play something!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to play something!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -31,7 +31,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
       );
 
     let SearchString = args.join(" ");
@@ -44,7 +44,7 @@ module.exports = {
     if (!CheckNode || !CheckNode.connected) {
       return client.sendTime(
         message.channel,
-        "❌ | **Lavalink node not connected**"
+        "<:sx_bg:1029983983494246421> | **Lavalink node not connected**"
       );
     }
     const player = client.Manager.create({
@@ -178,7 +178,7 @@ module.exports = {
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -186,13 +186,13 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          "❌ | **You must be in the same voice channel as me to use this command!**"
+          "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
         );
       let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
       if (!CheckNode || !CheckNode.connected) {
         return client.sendTime(
           interaction,
-          "❌ | **Lavalink node not connected**"
+          "<:sx_bg:1029983983494246421> | **Lavalink node not connected**"
         );
       }
       let player = client.Manager.create({
@@ -216,14 +216,14 @@ module.exports = {
             if (!player.queue.current) player.destroy();
             return client.sendError(
               interaction,
-              `❌ | **There was an error while searching**`
+              `<:sx_bg:1029983983494246421> | **There was an error while searching**`
             );
 
           case "NO_MATCHES":
             if (!player.queue.current) player.destroy();
             return client.sendTime(
               interaction,
-              "❌ | **No results were found**"
+              "<:sx_bg:1029983983494246421> | **No results were found**"
             );
           case "TRACK_LOADED":
             player.queue.add(TrackUtils.build(Searched.tracks[0], member.user));
@@ -261,7 +261,7 @@ module.exports = {
         } catch (err) {
           return client.sendTime(
             interaction,
-            `❌ | **There was an error while searching:** ${err.message}`
+            `<:sx_bg:1029983983494246421> | **There was an error while searching:** ${err.message}`
           );
         }
         switch (res.loadType) {
@@ -269,7 +269,7 @@ module.exports = {
             if (!player.queue.current) player.destroy();
             return client.sendTime(
               interaction,
-              "❌ | **No results were found**"
+              "<:sx_bg:1029983983494246421> | **No results were found**"
             );
           case "TRACK_LOADED":
             player.queue.add(res.tracks[0]);
@@ -331,7 +331,7 @@ module.exports = {
             } catch (e) {
               if (!player.queue.current) player.destroy();
               return awaitchannel.send(
-                "❌ | **You didn't provide a selection**"
+                "<:sx_bg:1029983983494246421> | **You didn't provide a selection**"
               );
             }
 

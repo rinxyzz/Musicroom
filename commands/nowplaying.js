@@ -22,7 +22,7 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
 
     let song = player.queue.current;
@@ -59,7 +59,7 @@ module.exports = {
       if (!player.queue.current)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
 
       let song = player.queue.current;

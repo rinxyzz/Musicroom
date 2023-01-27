@@ -28,12 +28,12 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -41,7 +41,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
       );
 
     try {
@@ -54,7 +54,7 @@ module.exports = {
       if (Number(args[0]) > player.queue.size)
         return client.sendTime(
           message.channel,
-          `❌ | That song is not in the queue! Please try again!`
+          `<:sx_bg:1029983983494246421> | That song is not in the queue! Please try again!`
         );
       //remove all tracks to the jumped song
       player.queue.remove(0, Number(args[0]) - 1);
@@ -95,7 +95,7 @@ module.exports = {
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -103,13 +103,13 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          `❌ | **You must be in the same voice channel as me to use this command!**`
+          `<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**`
         );
       let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
       if (!CheckNode || !CheckNode.connected) {
         return client.sendTime(
           interaction,
-          "❌ | **Lavalink node not connected**"
+          "<:sx_bg:1029983983494246421> | **Lavalink node not connected**"
         );
       }
 
@@ -134,7 +134,7 @@ module.exports = {
         )
           return client.sendTime(
             interaction,
-            `❌ | That song is not in the queue! Please try again!`
+            `<:sx_bg:1029983983494246421> | That song is not in the queue! Please try again!`
           );
 
         player.stop(skipTo);

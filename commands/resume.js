@@ -22,12 +22,12 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -35,13 +35,13 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
       );
 
     if (player.playing)
       return client.sendTime(
         message.channel,
-        "❌ | **Music is already resumed!**"
+        "<:sx_bg:1029983983494246421> | **Music is already resumed!**"
       );
     player.pause(false);
     await message.react("✅");
@@ -62,7 +62,7 @@ module.exports = {
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -70,19 +70,19 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          "❌ | **You must be in the same voice channel as me to use this command!**"
+          "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
         );
 
       let player = await client.Manager.get(interaction.guild_id);
       if (!player)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
       if (player.playing)
         return client.sendTime(
           interaction,
-          "❌ | **Music is already resumed!**"
+          "<:sx_bg:1029983983494246421> | **Music is already resumed!**"
         );
       player.pause(false);
       client.sendTime(interaction, "**⏯ Resumed!**");

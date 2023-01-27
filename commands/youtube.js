@@ -20,7 +20,7 @@ module.exports = {
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to play something!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to play something!**"
       );
     if (
       !message.member.voice.channel
@@ -29,7 +29,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **Bot doesn't have Create Invite Permission**"
+        "<:sx_bg:1029983983494246421> | **Bot doesn't have Create Invite Permission**"
       );
 
     let Invite = await message.member.voice.channel.activityInvite(
@@ -65,7 +65,7 @@ __**[Join YouTube Together](https://discord.com/invite/${Invite.code})**__
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | You must be in a voice channel to use this command."
+          "<:sx_bg:1029983983494246421> | You must be in a voice channel to use this command."
         );
       if (
         !member.voice.channel
@@ -74,7 +74,7 @@ __**[Join YouTube Together](https://discord.com/invite/${Invite.code})**__
       )
         return client.sendTime(
           interaction,
-          "❌ | **Bot doesn't have Create Invite Permission**"
+          "<:sx_bg:1029983983494246421> | **Bot doesn't have Create Invite Permission**"
         );
 
       let Invite = await member.voice.channel.activityInvite(

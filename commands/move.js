@@ -22,22 +22,22 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!args[0] || !args[1])
-      return client.sendTime(message.channel, "❌ | **Invalid arguments.**");
+      return client.sendTime(message.channel, "<:sx_bg:1029983983494246421> | **Invalid arguments.**");
 
     // Check if (args[0] - 1) is a valid index
     let trackNum = parseInt(args[0] - 1);
     if (trackNum < 1 || trackNum > player.queue.length - 1) {
-      return client.sendTime(message.channel, "❌ | **Invalid track number.**");
+      return client.sendTime(message.channel, "<:sx_bg:1029983983494246421> | **Invalid track number.**");
     }
 
     let dest = parseInt(args[1] - 1);
     if (dest < 1 || dest > player.queue.length - 1) {
       return client.sendTime(
         message.channel,
-        "❌ | **Invalid track destination.**"
+        "<:sx_bg:1029983983494246421> | **Invalid track destination.**"
       );
     }
 
@@ -47,7 +47,7 @@ module.exports = {
     player.queue.splice(dest, 0, track);
     client.sendTime(
       message.channel,
-      "✅ | **" +
+      "<:scheck_bg:1029984098065858570> | **" +
         track.title +
         "** has been moved to position " +
         (dest + 1) +
@@ -87,22 +87,22 @@ module.exports = {
       if (!player)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
       if (!args[0].value || !args[1].value)
-        return client.sendTime(interaction, "❌ | **Invalid track number.**");
+        return client.sendTime(interaction, "<:sx_bg:1029983983494246421> | **Invalid track number.**");
 
       // Check if (args[0] - 1) is a valid index
       let trackNum = parseInt(args[0].value - 1);
       if (trackNum < 1 || trackNum > player.queue.length - 1) {
-        return client.sendTime(interaction, "❌ | **Invalid track number.**");
+        return client.sendTime(interaction, "<:sx_bg:1029983983494246421> | **Invalid track number.**");
       }
 
       let dest = parseInt(args[1].value - 1);
       if (dest < 1 || dest > player.queue.length - 1) {
         return client.sendTime(
           interaction,
-          "❌ | **Invalid track destination.**"
+          "<:sx_bg:1029983983494246421> | **Invalid track destination.**"
         );
       }
 
@@ -112,7 +112,7 @@ module.exports = {
       player.queue.splice(dest, 0, track);
       client.sendTime(
         interaction,
-        "✅ | **" +
+        "<:scheck_bg:1029984098065858570> | **" +
           track.title +
           "** has been moved to position " +
           (dest + 1) +

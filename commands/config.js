@@ -41,7 +41,7 @@ What would you like to edit?
       ConfigMessage.reactions.removeAll();
       client.sendTime(
         message.channel,
-        "❌ | **You took too long to respond. If you want to edit the settings, run the command again!**"
+        "<:sx_bg:1029983983494246421> | **You took too long to respond. If you want to edit the settings, run the command again!**"
       );
       ConfigMessage.delete(Config);
     });

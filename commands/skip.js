@@ -22,12 +22,12 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
       );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -35,7 +35,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
       );
     player.stop();
     await message.react("✅");
@@ -55,7 +55,7 @@ module.exports = {
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:sx_bg:1029983983494246421> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -63,7 +63,7 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          "❌ | **You must be in the same voice channel as me to use this command!**"
+          "<:sx_bg:1029983983494246421> | **You must be in the same voice channel as me to use this command!**"
         );
 
       const skipTo = interaction.data.options
@@ -75,14 +75,14 @@ module.exports = {
       if (!player)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<:sx_bg:1029983983494246421> | **Nothing is playing right now...**"
         );
       console.log(interaction.data);
       if (
         skipTo !== null &&
         (isNaN(skipTo) || skipTo < 1 || skipTo > player.queue.length)
       )
-        return client.sendTime(interaction, "❌ | **Invalid number to skip!**");
+        return client.sendTime(interaction, "<:sx_bg:1029983983494246421> | **Invalid number to skip!**");
       player.stop(skipTo);
       client.sendTime(interaction, "**Skipped!**");
     },
